@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>Idade dos Pets</title>
+
+</head>
+<body>
+    <header>
+        <h1>Idade dos Pets</h1>
+        <h2>Preencha os dados abaixo para ver o resultado!</h2>
+    </header>
+    <main>
+        <section>
+            <div>
+                <p>Ano de nascimento:
+                    <input type="number" id="ano" min="0">
+                </p>
+                <p class="radio"> <strong>Pet :</strong>
+                    <input type="radio" name="pet" id="gato" checked>
+                    <label for="gato">Gato</label>
+                    <input type="radio" name="pet" id="cachorro">
+                    <label for="cachorro">Cachorro</label>
+                <p class="radio"> <strong>Sexo :</strong>
+                    <input type="radio" name="sex" id="femea" checked>
+                    <label for="femea">Fêmea</label>
+                    <input type="radio" name="sex" id="macho">
+                    <label for="macho">Macho</label>
+                </p>
+                <p>
+                    <button type="submit" onclick="verificar()">Verificar</button>
+                </p>
+            </div>
+            <div id="aviso"></div>
+            <div id="res"></div>
+        
+            <p id="disclaimer">DISCLAIMER: Outros pets serão adicionados em breve.</p>
+        </section>
+    </main>
+
+    <aside>
+        <p><a href="../verificador-de-idade/verificador-idade-pessoas.html">Voltar para a página anterior</a></p>
+    </aside>
+
+    <footer>
+        <p><em>Site criado por Natalie Cabral</em></p>
+    </footer>
+
+<script src="script.js"></script>
+</body>
+</html>

@@ -19,31 +19,31 @@ function verificar() {
         if (fsex[0].checked) {
            if (idade >= 0 && idade < 8) {
             genero = 'menino'
-                img.setAttribute('src', 'pessoas/foto-crianço.png')
+                img.setAttribute('src', 'fotos/foto-crianço.png')
 
             } else if (idade < 15) {
                 genero = 'menino'
-                img.setAttribute('src', 'pessoas/foto-menino.png')
+                img.setAttribute('src', 'fotos/foto-menino.png')
 
             }  else if (idade < 20) {
                 genero = 'menino'
-                img.setAttribute('src', 'pessoas/foto-hjovem.png')
+                img.setAttribute('src', 'fotos/foto-hjovem.png')
 
             }  else if (idade < 40) {
                 genero = 'homem'
-                img.setAttribute('src', 'pessoas/foto-homem.png')
+                img.setAttribute('src', 'fotos/foto-homem.png')
 
             }   else if (idade < 55) {
                 genero = 'homem' 
-                img.setAttribute('src', 'pessoas/foto-adulto.png')
+                img.setAttribute('src', 'fotos/foto-adulto.png')
 
             } else if (idade < 70) {
                 genero = 'homem'
-                img.setAttribute('src', 'pessoas/foto-homemvelho.png')
+                img.setAttribute('src', 'fotos/foto-homemvelho.png')
 
             }  else if (idade < 140) {
                 genero = 'homem'
-                img.setAttribute('src', 'pessoas/foto-idoso.png')
+                img.setAttribute('src', 'fotos/foto-idoso.png')
 
             }  else {
                 genero = 'homem' 
@@ -54,31 +54,31 @@ function verificar() {
              
              if (idade >= 0 && idade < 8) {
                 genero = 'menina' 
-                img.setAttribute('src', 'pessoas/foto-criança.png')
+                img.setAttribute('src', 'fotos/foto-criança.png')
 
             } else if (idade < 15) {
                 genero = 'menina' 
-                img.setAttribute('src', 'pessoas/foto-menina.png')
+                img.setAttribute('src', 'fotos/foto-menina.png')
 
             }  else if (idade < 20) {
                 genero = 'menina' 
-                img.setAttribute('src', 'pessoas/foto-mjovem.png')
+                img.setAttribute('src', 'fotos/foto-mjovem.png')
 
             }  else if (idade < 40) {
                 genero = 'mulher' 
-                img.setAttribute('src', 'pessoas/foto-mulher.jpeg')
+                img.setAttribute('src', 'fotos/foto-mulher.jpeg')
 
             }  else if (idade < 55) {
                 genero = 'mulher' 
-                img.setAttribute('src', 'pessoas/foto-adulta.jpeg')
+                img.setAttribute('src', 'fotos/foto-adulta.jpeg')
 
             } else if (idade < 70) {
                 genero = 'mulher' 
-                img.setAttribute('src', 'pessoas/foto-adultavelha.png')
+                img.setAttribute('src', 'fotos/foto-adultavelha.png')
 
             }  else if (idade < 140) {
                 genero = 'mulher' 
-                img.setAttribute('src', 'pessoas/foto-idosa.png')
+                img.setAttribute('src', 'fotos/foto-idosa.png')
 
             }  else {
                 genero = 'mulher' 

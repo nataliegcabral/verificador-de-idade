@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Verificador de Idade</title>
+    <link rel="stylesheet" href="estilo.css">
+</head>
+<body>
+    <header>Verificador de Idade</header>
+    <section>
+        <div>
+            <p>Ano de Nascimento:
+                <input type="number" id="txtano" min="0">
+            </p>
+            <p>Sexo:
+                <input type="radio" name="sex" id="mas" checked>
+                <label for="mas">Masculino</label>
+                <input type="radio" name="sex" id="fem">
+                <label for="fem">Feminino</label>
+            </p>
+            <p>
+                <button type="submit" onclick="verificar()">Verificar</button>
+            </p>
+        </div>
+        <div id="aviso"></div>
+        <div id="res">
+            Preencha os dados acima para ver o resultado!
+        </div>
+
+    </section>
+
+    <aside>
+        <p>Venhar checar também nosso verificador de idade dos pets <a href="../idade-dos-pets.html">clicando aqui</a>!</p>
+    </aside>
+
+    <footer>
+            &copy; Natalie Cabral 2022
+        </footer>
+    <script src="script.js"></script>
+</body>
+</html>

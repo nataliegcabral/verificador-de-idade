@@ -1,11 +1,15 @@
 @charset "UTF-8";
 @import url('https://fonts.googleapis.com/css2?family=Roboto+Slab:wght@300&family=Roboto:wght@300&display=swap');
-
+/* rgb(247, 231, 211) */
 
 :root {
-    --cor0: rgb(25, 43, 46);
-    --cor1: rgb(247, 231, 211);
-    --cor2: rgb(72, 131, 133);
+    --cor0: rgb(88, 134, 136);
+    --cor1: rgb(25, 35, 36);
+    --cor2: rgb(133, 182, 184);
+
+    --dark0: rgb(25, 43, 46);
+    --dark1: rgb(247, 231, 211);
+    --dark2: rgb(55, 102, 104);
 }
 
 body {
@@ -13,6 +17,7 @@ body {
     background: var(--cor0);
     color: var(--cor1);
     font-size: 23px;
+    transition: all .2s;
 }
 
 h1 {
@@ -27,6 +32,25 @@ h2 {
     font-size: 25px;
     padding: 20px 0px;
     font-weight: 100;
+}
+
+header > button {
+    background-color: var(--dark2);
+    color: var(--cor2);
+    padding: 5px;
+    border-radius: 10px;
+    border: none;
+    display: flex;
+    position: absolute;
+    top: 2%;
+    left: 2%;
+    cursor: pointer;
+    transition: .2s ease-in-out;
+  }
+  
+header > button:hover {
+    background-color: var(--dark0);
+    color: var(--cor2);
 }
 
 input {
@@ -63,7 +87,7 @@ img {
     margin-top: 40px;
 }
 
-button {
+.verif {
     background: var(--cor0);
     color: var(--cor1);
     cursor: pointer;
@@ -75,7 +99,7 @@ button {
     
 }
 
-button:hover {
+.verif:hover {
     transform: scale(1.1);
 }
 
@@ -111,3 +135,30 @@ footer {
     text-align: center;
     max-height: 100%;
 }
+
+.dark-mode{
+    background-color: var(--dark0);
+    color: var(--dark1);
+  }
+
+  .dark-mode section {
+    background-color: var(--dark2);
+  }
+
+  .dark-mode header > button {
+    background-color: var(--dark2);
+    color: var(--dark0);
+  }
+
+  .dark-mode header > button:hover {
+    background-color: var(--cor2);
+  }
+
+  .dark-mode .verif {
+    background-color: var(--dark0);
+    color: var(--dark1);
+  }
+
+  .dark-mode a {
+    color: var(--dark2);
+  }

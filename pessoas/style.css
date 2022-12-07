@@ -2,9 +2,13 @@
 @import url('https://fonts.googleapis.com/css2?family=Roboto+Slab:wght@300&family=Roboto:wght@300&display=swap');
 
 :root {
-  --cor0: rgb(33, 46, 25);
-  --cor1: rgb(247, 231, 211);
-  --cor2: rgb(102, 133, 72);
+  --cor0: rgb(153, 185, 121);
+  --cor1: rgb(48, 54, 42);
+  --cor2: rgb(181, 206, 156);
+
+  --dark0: rgb(35, 44, 30);
+  --dark1: rgb(247, 231, 211);
+  --dark2: rgb(109, 131, 87);
 }
 
 body {
@@ -12,7 +16,7 @@ body {
   color: var(--cor1);
   font-family: 'Roboto Slab', serif;
   font-size: 23px;
-
+  transition: all .2s;
 }
 
 h1 {
@@ -27,6 +31,25 @@ h2 {
   font-size: 25px;
   padding: 20px 0px;
   font-weight: 100;
+}
+
+header > button {
+  background-color: var(--dark2);
+  color: var(--cor2);
+  padding: 5px;
+  border-radius: 10px;
+  border: none;
+  display: flex;
+  position: absolute;
+  top: 2%;
+  left: 2%;
+  cursor: pointer;
+  transition: .2s all;
+}
+
+header > button:hover {
+  background-color: var(--cor1);
+  color: var(--cor2);
 }
 
 section {
@@ -49,7 +72,7 @@ input {
   margin-left: 5px;
 }
 
-button {
+.verif {
   background: var(--cor0);
   color: var(--cor1);
   cursor: pointer;
@@ -60,7 +83,7 @@ button {
   transition: all 0.2s;
 }
 
-button:hover {
+.verif:hover {
   transform: scale(1.1);
 }
 
@@ -87,7 +110,7 @@ aside {
 
 a {
   text-decoration: none;
-  color: var(--cor2);
+  color: rgb(227, 247, 208);
 }
 
 a:hover {
@@ -98,4 +121,31 @@ footer {
   font-family: Arial, Helvetica, sans-serif;
   font-size: 16px;
   text-align: center;
+  }
+
+  .dark-mode{
+    background-color: var(--dark0);
+    color: var(--dark1);
+  }
+
+  .dark-mode section {
+    background-color: var(--dark2);
+  }
+
+  .dark-mode header > button {
+    background-color: var(--dark2);
+    color: var(--dark0);
+  }
+
+  .dark-mode header > button:hover {
+    background-color: var(--cor2);
+  }
+
+  .dark-mode .verif {
+    background-color: var(--dark0);
+    color: var(--dark1);
+  }
+
+  .dark-mode a {
+    color: var(--dark2);
   }

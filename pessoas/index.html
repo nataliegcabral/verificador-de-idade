@@ -6,11 +6,14 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Verificador de Idade</title>
     <link rel="stylesheet" href="style.css">
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
 </head>
 <body>
     <header>
         <h1>Idade das Pessoas</h1>
         <h2>Preencha os dados abaixo para ver o resultado!</h2>
+        <button class="muda-tema" id="btn"><span class="material-icons">dark_mode</span></button>
+        
     </header>
 
     <section>
@@ -25,7 +28,7 @@
                 <label for="fem">Feminino</label>
             </p>
             <p>
-                <button type="submit" onclick="verificar()">Verificar</button>
+                <button type="submit" onclick="verificar()" class="verif">Verificar</button>
             </p>
         </div>
         <div id="aviso"></div>
